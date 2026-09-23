@@ -218,7 +218,7 @@ main {
 }
 
 .card {
-  background: var(--bg-raised);
+  /* background: var(--bg-raised); */
   border: 1px solid var(--line);
   border-radius: 3px;
   overflow: hidden;
@@ -229,7 +229,7 @@ main {
 .canvas-slot {
   width: 100%;
   aspect-ratio: 1/1;
-  background: #000;
+  background: transparent;
   position: relative;
   border-bottom: 1px solid var(--line);
 }
@@ -245,7 +245,9 @@ main {
   pointer-events: none;
 }
 .card-body {
+  background: var(--bg-raised);
   padding: 14px 16px 16px;
+  flex: 1;
 }
 .card-body h3 {
   font-size: 13.5px;
