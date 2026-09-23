@@ -247,8 +247,8 @@ const io = new IntersectionObserver(
 PATTERNS.forEach((p) => io.observe(p.el));
 
 function resize() {
-  const w = window.innerWidth,
-    h = window.innerHeight;
+  const w = canvas.clientWidth;
+  const h = canvas.clientHeight;
   renderer.setSize(w, h, false);
 }
 window.addEventListener("resize", resize);
